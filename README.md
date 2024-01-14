@@ -5,7 +5,7 @@ Check out the video demonstration here --> https://www.youtube.com/watch?v=hpZHz
 # FitJourney: Gamified Fitness Application
 
 ## Introduction
-Welcome to FitJounrey, a cutting-edge iOS fitness application designed to make fitness fun, engaging, and competitive. Developed using React Native and featuring a robust PostgreSQL database, FitQuest is tailored for fitness enthusiasts looking to gamify their fitness journey. 
+Introducing FitJourney – an iOS fitness application designed to transform the fitness journey into an engaging, gamified experience. The core purpose of FitJourney is to address a common challenge: the gap between setting fitness goals and achieving them. By gamifying the process, FitJourney aims to motivate users to persistently pursue their goals, making the journey towards fitness as rewarding as the results. Developed with React Native and backed by a robust PostgreSQL database, FitJourney is more than just a fitness app; it's a companion in your fitness journey, keeping you motivated, engaged, and on track. 
 
 ## Key Features
 
@@ -41,3 +41,11 @@ Welcome to FitJounrey, a cutting-edge iOS fitness application designed to make f
 
 ### 11. **Profile Customization**
    Set a profile picture and personalize your account to make it uniquely yours.
+
+### Technical Aspects
+
+FitJourney leverages the cross-platform capabilities of React Native, allowing for a seamless user experience on iOS devices. The choice of React Native also facilitates the integration of complex functionalities while maintaining a responsive and intuitive interface.
+
+The backend is powered by a PostgreSQL database, known for its reliability and scalability. This ensures that user data, including workout logs, competition results, and personal achievements, are stored securely and efficiently.
+
+
