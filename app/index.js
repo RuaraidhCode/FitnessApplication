@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { AuthProvider } from './AuthContext';
@@ -18,11 +18,21 @@ const App = () => {
   });
   
   return (
-    <NavigationContainer independent={true}>
+  
+    <NavigationContainer independent={true} style={styles.container}>
       <AuthProvider>
          <AppNav />
         </AuthProvider>
     </NavigationContainer>
+    
   );
 };
 export default App;
+
+const styles = StyleSheet.create({
+container:{
+ backgroundColor: 'green',
+ flex: 1,
+}
+  
+});

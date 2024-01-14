@@ -60,7 +60,7 @@ const CompetitionHistory = () => {
                     <View style={styles.cardDetails}>
                         {/* Display additional details here */}
                         <Text style={styles.pointText}>Points: {competition.points}</Text>
-                        <Text style={styles.IdText}>Competition ID: {competition.comp_id}</Text>
+                        <Text style={styles.IdText}>Competition Type: Solo</Text>
                         <View style={styles.buttonContainer}>
                             <TouchableOpacity
                                 style={styles.leaderboardButton}

@@ -34,14 +34,14 @@ const LevelingTesting = () => {
   
 
   const barData = [
-    { value: weekOne, frontColor: '#177AD5', label: weekOneShort,  labelWidth: 20, labelTextStyle: {color: 'gray', fontSize: 7, textAlign: 'left'}},
-    { value: weekTwo, frontColor: '#177AD5', label: weekTwoShort,  labelWidth: 20, labelTextStyle: {color: 'gray', fontSize: 7, textAlign: 'left'}},
-    { value: weekThree, frontColor: '#177AD5', label: weekThreeShort,  labelWidth: 20, labelTextStyle: {color: 'gray', fontSize: 7, textAlign: 'left'} },
-    { value: weekFour, frontColor: '#177AD5', label: weekFourShort,  labelWidth: 20, labelTextStyle: {color: 'gray', fontSize: 7, textAlign: 'left'} },
-    { value: weekFive, frontColor: '#177AD5', label: weekFiveShort,  labelWidth: 20, labelTextStyle: {color: 'gray', fontSize: 7, textAlign: 'left'} },
-    { value: weekSix, frontColor: '#177AD5', label: weekSixShort,  labelWidth: 20, labelTextStyle: {color: 'gray', fontSize: 7, textAlign: 'left'} },
-    { value: weekSeven, frontColor: '#177AD5', label: weekSevenShort,  labelWidth: 20, labelTextStyle: {color: 'gray', fontSize: 7, textAlign: 'left'} },
-    { value: weekEight, frontColor: '#177AD5', label: weekEightShort,  labelWidth: 20, labelTextStyle: {color: 'gray', fontSize: 7, textAlign: 'left'} }
+    { value: 4, frontColor: '#177AD5', label: weekOneShort,  labelWidth: 20, labelTextStyle: {color: 'gray', fontSize: 7, textAlign: 'left'}},
+    { value: 4, frontColor: '#177AD5', label: weekTwoShort,  labelWidth: 20, labelTextStyle: {color: 'gray', fontSize: 7, textAlign: 'left'}},
+    { value: 4, frontColor: '#177AD5', label: weekThreeShort,  labelWidth: 20, labelTextStyle: {color: 'gray', fontSize: 7, textAlign: 'left'} },
+    { value: 5, frontColor: '#177AD5', label: weekFourShort,  labelWidth: 20, labelTextStyle: {color: 'gray', fontSize: 7, textAlign: 'left'} },
+    { value: 4, frontColor: '#177AD5', label: weekFiveShort,  labelWidth: 20, labelTextStyle: {color: 'gray', fontSize: 7, textAlign: 'left'} },
+    { value: 5, frontColor: '#177AD5', label: weekSixShort,  labelWidth: 20, labelTextStyle: {color: 'gray', fontSize: 7, textAlign: 'left'} },
+    { value: 3, frontColor: '#177AD5', label: weekSevenShort,  labelWidth: 20, labelTextStyle: {color: 'gray', fontSize: 7, textAlign: 'left'} },
+    { value: 5, frontColor: '#177AD5', label: weekEightShort,  labelWidth: 20, labelTextStyle: {color: 'gray', fontSize: 7, textAlign: 'left'} }
   ];
   
 
@@ -141,7 +141,7 @@ const LevelingTesting = () => {
       const withinWeekTwo = userWorkoutHistoryData.filter(entry => {
         const workoutDate = new Date(entry.workout_date);
         const differenceInDays = Math.floor((workoutDate - weekTwoStart) / (1000 * 60 * 60 * 24));
-        return differenceInDays > 7 && differenceInDays <= 14; // Within 7 to 14 days of the week start
+        return differenceInDays >= 7 && differenceInDays <= 14; // Within 7 to 14 days of the week start
       });
       const countOfWorkoutsWithinWeekTwo = withinWeekTwo.length;
       setWeekTwo(countOfWorkoutsWithinWeekTwo);

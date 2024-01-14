@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken')
 require('dotenv').config();
 
 const client = new Client({
-  host: '192.168.1.77',
+  host: '192.168.1.154',
   user: 'postgres',
   port: 5439,
   database: 'postgres',

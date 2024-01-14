@@ -36,8 +36,8 @@ const Leaderboard = () => {
 
   useEffect(() => {
     const currentDate = new Date();
-   currentDate.setMonth(currentDate.getMonth() + 7);
-  // currentDate.setMonth(currentDate.getMonth());
+   //currentDate.setMonth(currentDate.getMonth() + 7);
+   currentDate.setMonth(currentDate.getMonth());
     
     const formattedCurrentDate = currentDate.toISOString().split('T')[0];
     const competitionEndDate = leaderboardListData
@@ -58,8 +58,8 @@ const Leaderboard = () => {
   useEffect(() => {
 
     const currentDate = new Date();
-      currentDate.setMonth(currentDate.getMonth() + 7);
-   // currentDate.setMonth(currentDate.getMonth());
+     //currentDate.setMonth(currentDate.getMonth() + 7);
+    currentDate.setMonth(currentDate.getMonth());
     
     const formattedCurrentDate = currentDate.toISOString().split('T')[0];
     const formattedCompetitionEndDate = leaderboardListData
@@ -327,7 +327,8 @@ const completedTeamCompLeaderboard = () => {
     const teamEntries = leaderboardListData
       .filter((entry) => entry.comp_id === compId && teamNames[entry.team_id] === teamName);
 
-    const totalPoints = teamEntries.reduce((acc, entry) => acc + teamPoints[entry.team_id], 0);
+      const totalPoints = teamEntries.reduce((acc, entry) => acc + entry.points, 0);
+
 
     return (
       <View key={index} style={styles.teamBox}>
